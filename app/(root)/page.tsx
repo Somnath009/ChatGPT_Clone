@@ -1,13 +1,9 @@
-import { ModeToggle } from "@/components/ui/mode-toggle";
-import { UserButton } from "@clerk/nextjs";
-import Image from "next/image";
+import { NewChatView } from "@/features/conversation/components/new-chat-view";
 
-export default function Home() {
-  return (
-    <div>
-      <h1>Hello World</h1>
-      <ModeToggle />
-      <UserButton />
-    </div>
-  );
+/**
+ * Home page — shows an empty chat UI.
+ * A conversation is only created when the user sends their first message.
+ */
+export default function HomePage() {
+    return <NewChatView />;
 }
