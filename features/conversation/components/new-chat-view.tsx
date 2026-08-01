@@ -45,8 +45,8 @@ export function NewChatView() {
     );
 
     return (
-        <div className="flex h-full min-h-0 flex-1 flex-col">
-            <header className="sticky top-0 z-10 flex h-14 shrink-0 items-center gap-2 border-b bg-background/80 backdrop-blur-sm px-3 md:px-4">
+        <div className="flex h-full min-h-0 flex-1 flex-col overflow-hidden">
+            <header className="sticky top-0 z-20 flex h-14 shrink-0 items-center gap-2 border-b bg-background/80 backdrop-blur-md px-3 md:px-4">
                 <SidebarTrigger className="shrink-0" />
                 <Separator orientation="vertical" className="mx-1 h-4" />
                 <h1 className="truncate text-sm font-medium">New Chat</h1>
